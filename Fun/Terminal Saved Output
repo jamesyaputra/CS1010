@@ -1,0 +1,142 @@
+Last login: Tue Feb 27 10:28:07 on console
+jamesyaputra@James-Yaputras-MacBook-Pro:~$ cd Desktop/
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop$ cd Programs/
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs$ ls
+CS1010/  CS2040C/ avr/
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs$ cd CS2040C/
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall std=c++11
+clang: error: no such file or directory: 'std=c++11'
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+ps03A.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+#include <bits/stdc++.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+ps03A.cpp:18:40: error: function definition is not allowed here
+void update(string name, int dilation) {
+                                       ^
+ps03A.cpp:30:16: error: function definition is not allowed here
+string query() {
+               ^
+ps03A.cpp:35:13: error: function definition is not allowed here
+int main () {
+            ^
+ps03A.cpp:56:2: error: expected '}'
+}
+ ^
+ps03A.cpp:14:25: note: to match this '{'
+void birth(string name) {
+                        ^
+4 errors generated.
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+ps03A.cpp:1:10: fatal error: 'bits/stdc++.h' file not found
+#include <bits/stdc++.h>
+         ^~~~~~~~~~~~~~~
+1 error generated.
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+15
+0 GRACE 55
+0 TATA 100
+3
+TATA
+2 GRACE
+3
+TATA
+2 TATA
+3
+The delivery suite is empty
+0 MATTHEW 20
+0 XAVIER 10
+0 AARYAM 5
+3
+MATTHEW
+2 XAVIER 30
+MATTHEW
+^C
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+30
+0 MATTHEW 30
+0 XAVIER 10
+0 AARYAM 5
+3
+MATTHEW
+1 AARYAM 30
+3
+AARYAM
+1 MATTHEW 5
+3
+AARYAM
+3
+AARYAM
+^C
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+0 MATTHEW
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+0 MATT 10
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+30
+0 MATTHEW 30
+0 XAVIER 25
+0 AARYAM 5
+3
+MATTHEW
+1 AARYAM 25
+3
+AARYAM
+^C
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+30
+0 AARYAM 30
+0 MATTHEW 5
+0 XAVIER 10
+1 MATTHEW 25 
+3
+MATTHEW
+^[[A^C
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ ./ps03A.out 
+30
+0 GRACE 30
+0 CINDY 50
+0 SAMANTHA 67
+3
+SAMANTHA
+1 GRACE 27
+3
+GRACE
+
+^C
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ g++ ps03A.cpp -o ps03A.out -Wall -std=c++11
+ps03A.cpp:28:38: error: reference to 'count' is ambiguous
+        vect.push_back(make_tuple(dilation, count, name));
+                                            ^
+ps03A.cpp:9:5: note: candidate found by name lookup is 'count'
+int count = -1;
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__bit_reference:305:1: note: 
+      candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:1138:1: note: 
+      candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+ps03A.cpp:29:2: error: reference to 'count' is ambiguous
+        count--;
+        ^
+ps03A.cpp:9:5: note: candidate found by name lookup is 'count'
+int count = -1;
+    ^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/__bit_reference:305:1: note: 
+      candidate found by name lookup is 'std::__1::count'
+count(__bit_iterator<_Cp, _IsConst> __first, __bit_iterator<_Cp, _IsConst> __last, const _Tp& __value_)
+^
+/Applications/Xcode.app/Contents/Developer/Toolchains/XcodeDefault.xctoolchain/usr/include/c++/v1/algorithm:1138:1: note: 
+      candidate found by name lookup is 'std::__1::count'
+count(_InputIterator __first, _InputIterator __last, const _Tp& __value_)
+^
+2 errors generated.
+jamesyaputra@James-Yaputras-MacBook-Pro:~/Desktop/Programs/CS2040C$ 
